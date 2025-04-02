@@ -63,6 +63,7 @@ const IntialLayout = () => {
       headerShown:false
     }}
     >
+      
       <Stack.Screen name='index'  />
     </Stack> 
   )
