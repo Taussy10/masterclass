@@ -41,7 +41,7 @@ const Login = () => {
       console.log('SignedIn user :', user);
     } catch (error) {
       console.log('error');
-      throw new Error('Error while trying to sign in ');
+      throw new Error('Error while trying to sign-in ');
     }
   };
 
