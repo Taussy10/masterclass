@@ -47,7 +47,7 @@ const Login = () => {
 
   return (
     <SafeAreaView className=" flex-1 items-center bg-dark  px-4">
-      <StatusBar style="light" backgroundColor={'brown'}  />
+      <StatusBar style="light" backgroundColor={'red'}  />
 
       <Image
         source={require('../assets/intro.png')}
