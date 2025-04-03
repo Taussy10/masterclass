@@ -65,6 +65,8 @@ const IntialLayout = () => {
     >
       
       <Stack.Screen name='index'  />
+      <Stack.Screen name='login'  />
+      <Stack.Screen name='test'  />
     </Stack> 
   )
 }
