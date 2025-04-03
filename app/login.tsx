@@ -58,35 +58,44 @@ const router = useRouter()
         setActive!({ session: createdSessionId });
       }
 
-      // //  Strapi
-      // // for variables created for holding 
-      // const email = signUp?.emailAddress;
-      // const username = signUp?.username;
-      // const password = randomUUID();
-      // const id = signUp?.createdUserId;
+      //  Strapi
+      // for variables created for holding 
+      const email = signUp?.emailAddress;
+      const username = signUp?.firstName;
+      const password = randomUUID();
+      const id = signUp?.createdUserId;
 
-      // if (!email || !username || !password || !id) {
-      //   throw new Error('Missing requried fields');
-      // }
+      // that username was null 
+console.log("signUp username :", signUp?.username);
+console.log("signUp object firstname :", signUp?.firstName);
+// console.log("randomeUUID :", password);
+
+
+
+      if (!email || !username || !password || !id) {
+        throw new Error('Missing requried fields');
+      }
 
 
       // const strapiUser = {
+      //   // actually these are just object but there key and values are same so we can ommit key/value(both are same )
       //   email,
       //   username,
       //   password,
       //   clerkId: id,
       // };
+
       // const user = await createUser(strapiUser);
-      // console.log("StrapiUser credentials :" ,strapiUser);
+      // console.log("StrapiUser credentials :" ,user);
 
+      console.log('Signed :', signIn);
 
-      // console.log('SignedIn user :', user);
       if (signIn) {
         router.push('/test'); // Use router.push if using expo-router
       }
       
 
-    } catch (error) {
+    } catch (error:unknown) {
       // console.log('error :',error);
       // throw new Error('Error while trying to sign-in ');
       console.log(error);

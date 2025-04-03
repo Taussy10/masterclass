@@ -36,7 +36,7 @@ export function StrapiProvider({ children }: { children: ReactNode }) {
   const baseUrl = process.env.EXPO_PUBLIC_STRAPI_API_URL as string;
 
 // got the useUser hook from clerk and useQueryClient from tanstack query  
-  const { user } = useUser();
+  // const { user } = useUser();
   const queryClient = useQueryClient();
 
 
@@ -66,6 +66,7 @@ export function StrapiProvider({ children }: { children: ReactNode }) {
     }
   };
 
+ 
 
 //   For getting courses
   const getCourses = async (): Promise<Course[]> => {

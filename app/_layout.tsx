@@ -45,7 +45,7 @@ const IntialLayout = () => {
       SplashScreen.hideAsync();
     }
     // isLoaded for loading the auth in clerk
-  }, [loaded, error, isLoaded]);
+  }, [loaded, error, isLoaded,isSignedIn]);
 
 
 
